@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicio Wireframes</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/slidebars.min.css">
+		<link rel="stylesheet" href="css/pgwslider.min.css">
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+
+	</head>
+	<body>
+		<div>
+			<div class="top-bar">
+				<div class="login_registro">
+					<a class="login_registro_trigger" style="display: none;"></a>
+					<p>Bienvenido, <a href="#">Iniciar sesión</a> o <a href="#">Registararse</a></p>
+				</div>
+				<form class="buscador">
+					<label style="display:none">Buscar</label>
+					<input type="search" placeholder="Buscar">
+					<input class="button" type="submit">
+				</form>
+			</div>
+			<div class="nav-bar1">
+				<h1>Logo</h1>
+				<a class="sb-toggle-right"></a>
+				<div id="menu" class="sb-slidebar sb-right sb-style-push">
+					<ul class="menu-navbar1">
+						<li>
+							<a href="#">Contáctanos</a>
+						</li>
+						<li>
+							<a href="#">Estado de vuelos</a>
+						</li>
+						<li>
+							<a href="#">Check in</a>
+						</li>
+						<li>
+							<a href="#">Idioma</a>
+						</li>
+					</ul>
+					<ul class="nav-bar2-mobile" style="display: none;">
+					<li>
+						<a href="#">
+							Reserva tu vuelo
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Tu reserva
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Servicios
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Extras
+						</a>
+					</li>
+				</ul>
+
+				</div>
+			</div>
+			<div class="wrapper" id="sb-site">
+				<ul class="nav-bar2">
+					<li>
+						<a href="#">
+							<i class="ico-rtv"></i>
+							Reserva tu vuelo
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="ico-reserva"></i>
+							Tu reserva
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="ico-servicios"></i>
+							Servicios
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="ico-extras"></i>
+							Extras
+						</a>
+					</li>
+				</ul>
+				<section class="ofertas">
+					<ul class="slider pgwSlider">
+						<li><img src="imagenes/slider/mallorca_sm.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars" data-large-src="imagenes/slider/mallorca_lg.jpg"></li>
+						</li>
+						<li><img src="imagenes/slider/mallorca_sm.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars" data-large-src="imagenes/slider/mallorca_lg.jpg"></li>
+						</li>
+						<li><img src="imagenes/slider/mallorca_sm.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars" data-large-src="imagenes/slider/mallorca_lg.jpg"></li>
+						</li>
+						<li><img src="imagenes/slider/mallorca_sm.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars" data-large-src="imagenes/slider/mallorca_lg.jpg"></li>
+						</li>
+					</ul>
+					<!--
+					<section class="ofertas">
+						<article>
+							<h3><p>Origen</p><p>Destino</p></h3>
+							<div class="precio">
+								<p>00,00</p>
+								<p class="moneda"></p>
+							</div>
+							<a href="#">Ver</a>
+						</article>
+						<article>
+							<h3><p>Origen</p><br><p>Destino</p></h3>
+							<div class="precio">
+								<p>00,00</p>
+								<p class="moneda"></p>
+							</div>
+							<a href="#">Ver</a>
+						</article>
+						<article>
+							<h3><p>Origen</p><br><p>Destino</p></h3>
+							<div class="precio">
+								<p>00,00</p>
+								<p class="moneda"></p>
+							</div>
+							<a href="#">Ver</a>
+						</article>
+						<article>
+							<h3><p>Origen</p><p>Destino</p></h3>
+							<div class="precio">
+								<p>00,00</p>
+								<p class="moneda"></p>
+							</div>
+							<a href="#">Ver</a>
+						</article>
+					</section>
+				-->
+				</section>
+				<section class="buscar">
+					<h2>Busca tu vuelo</h2>
+					<form class="buscador-vuelos" form action="" method="post" enctype="multipart/form-data">
+						<fieldset class="origen-destino">
+							<label for="origen">Orígen</label>
+							<input type="textarea" name="origen" placeholder="Origen">
+							<label for="destino">Destino</label>
+							<input type="textarea" name="destino" placeholder="Destino">
+						</fieldset>
+						<br>
+						<fieldset class="flex-fechas">
+							<input type="checkbox" id="solo-ida" name="solo_ida" value="solo-ida">
+				            <label for="solo-ida"><span>Sólo Ida</span></label>
+				            <input type="checkbox" id="flexibilidad" name="flexibilidad de fechas" value="flexibilidad">
+				            <label for="flexibilidad"><span>Flexibilidad de fechas</span></label>
+						</fieldset>
+						<br>
+						<fieldset class="fechas">
+							<div class="salida">
+				                <label for="salida">Salida</label>
+				                <input id="salida" type="text" name="salida">
+				            </div>
+				            <div class="vuelta">
+				                <label for="vuelta">Vuelta</label>
+				                <input id="vuelta" type="text" name="vuelta">
+				            </div>
+						</fieldset>
+						<br>
+						<fieldset>
+							<div class="adultos">
+								<label for="n_adultos">Adultos</label>
+								<select name="n_adultos">
+									<option value="0">0</option>
+									<option value="1" selected>1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="mas">más...</option>
+								</select>
+							</div>
+							<div class="ninos">
+								<label for="n_niños">Niños</label>
+								<select name="n_niños">
+									<option value="0" selected>0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="mas">más...</option>
+								</select>
+							</div>
+							<div class="bebes">
+								<label for="n_bebes">Bebes</label>	
+								<select name="bebes">
+									<option value="0" selected>0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="mas">más...</option>
+								</select>
+							</div>
+						</fieldset>
+						<br>
+						<input type="submit" value="Buscar">
+					</form>
+				</section>
+			</div>
+			<footer>
+				<ul>
+					<li>
+						<h3>Sección</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut elit ac ipsum posuere rutrum.</p>
+					</li>
+					<li>
+						<h3>Sección</h3>
+						<p>Consectetur adipiscing elit. Sed ut elit ac ipsum posuere rutrum.</p>
+					</li>
+					<li>
+						<h3>Sección</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut elit ac ipsum posuere rutrum.</p>
+					</li>
+					<li>
+						<h3>Sección</h3>
+						<p>Sed ut elit ac ipsum posuere rutrum.</p>
+					</li>
+					<li>
+						<h3>Sección</h3>
+						<p>Dolor sit amet, consectetur adipiscing elit. Sed ut elit ac ipsum posuere rutrum.</p>
+					</li>
+					<li>
+						<a href="#" style="background: url ('imagenes/twitter.png') no repat;"></a>
+						<a href="#" style="background: url ('imagenes/rrss.png') no repat;"></a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+	  (function($) {
+	    $(document).ready(function() {
+	      $.slidebars();
+	    });
+	  }) (jQuery);
+	</script>
+	<script src="js/Slidebars-0.10.2/slidebars.min.js"></script>
+	<script src="js/PgwSlider-master/pgwslider.min.js"></script>
+	<script src="js/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+	<script src="js/functions.js"></script>
+	</body>
+</html>

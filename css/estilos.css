@@ -1,0 +1,503 @@
+/* ===== GENERAL =====
+   ================== */
+*:focus {
+    outline: 0;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+h2 {
+	color: #FFF;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+body {
+	font-family: 'Muli', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	background: url('../imagenes/bg.png') repeat;
+}
+
+fieldset {
+	border: 0 !IMPORTANT;
+	padding: 0;
+}
+
+input {
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid #fff;
+}
+
+label {
+	color: #fff;
+}
+
+form select {
+	border: 0;
+    border-bottom: 1px solid #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    background: url('../imagenes/selector.png') no-repeat 90% center;
+    width: 69px;
+    height: 30px;
+    text-indent: 0.01px;
+    text-overflow: "";
+    font-size: 1em;
+    padding-top: 4px;
+    -webkit-padding-before: 0;
+    -webkit-padding-start: 24px;
+    text-align: center;
+}
+
+.wrapper {
+	max-width: 960px;
+
+}
+ #sb-site {
+ 	margin: 0 auto;
+ 	background-color: transparent;
+ }
+
+/* ===== NAVIGATION=====
+   ================== */
+
+/* TOP BAR */
+
+.top-bar {
+	background-color: #2d2d2d;
+	color: #fff;
+	height: 60px;
+	width: 100%
+}
+
+.login_registro {
+	display: block;
+	float: left;
+}
+
+.login_registro p {
+	margin-top: 20px;
+	margin-left: 15px;
+
+}
+
+.login_registro a {
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.top-bar form {
+	display: inline-block;
+	float: right;
+	margin-right: 30px;
+	margin-top: 10px;
+
+}
+
+.top-bar input {
+	background-color: #2d2d2d;
+	border: 0px;
+	border-bottom: 1px solid #fff;
+}
+
+.top-bar input[type=submit] {
+	text-indent: -9999px;
+	background: url("../imagenes/icon_15440b.png") no-repeat center;
+	background-size: cover;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 30px;
+	height: 30px;
+	border: 0px;
+}
+
+/* NAVBAR 1 */
+
+
+h1 {
+	float: left;
+	display: inline-block;
+	text-indent: -999999px;
+	background: url("../imagenes/logo.png") no-repeat center;
+	background-size: cover;
+	width: 277px;
+	height: 60px;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 15px; 
+}
+.nav-bar1 {
+	background-color: #fafafa;
+	height: 90px;
+	width: 100%;
+
+}
+
+.menu-navbar1 li {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+
+.menu-navbar1 {
+	display: inline-block;
+	float: right;
+	margin: 0px;
+	list-style: none;
+}
+
+.menu-navbar1 a {
+	color: #2d2d2d;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+
+}
+
+.sb-toggle-right {
+	float: right;
+	margin-top: 32px;
+	margin-right: 10px;
+	background: url('../imagenes/icon-menu.png') no-repeat center;
+	background-size: cover;
+  	width: 31px;
+	height: 25px;
+}
+
+.sb-active .menu-navbar1 {
+	padding: 30px;
+}
+
+.sb-active .menu-navbar1 li {
+	padding: 15px;
+	display: inherit;
+}
+
+.sb-active .menu-navbar1 li a {
+	color: #fff;
+}
+
+
+/* NAVBAR 2 */
+
+.nav-bar2  {
+	padding-right: 0px;
+}
+
+.nav-bar2 li {
+	display: inline-block;
+	width: 24%;
+	text-align: center;
+	vertical-align: top;
+}
+
+.nav-bar2 li:first-child {
+	float: left;
+}
+
+.nav-bar2 li a {
+	color: #2d2d2d;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	display: block;
+    position: relative;
+
+}
+
+.nav-bar2 li a i {
+	display: block;
+	margin: 0 auto;
+}
+
+.ico-rtv {
+	background: url('../imagenes/icon-rtv.png') no-repeat left;
+	width: 49px;
+	height: 40px;
+	vertical-align: bottom;
+}
+
+.ico-reserva {
+	background: url('../imagenes/icon-reserva.png') no-repeat left;
+	width: 64px;
+	height: 40px;
+	vertical-align: bottom;
+}
+
+.ico-servicios {
+	background: url('../imagenes/icon-servicios.png') no-repeat left;
+	width: 55px;
+	height: 40px;
+	vertical-align: bottom;
+}
+
+.ico-extras {
+	background: url('../imagenes/icon-extras.png') no-repeat left;
+	width: 36px;
+	height: 40px;
+	vertical-align: bottom;
+}
+
+/* SLIDER */
+
+.ofertas {
+	display: inline-block;
+	float: left;
+}
+
+
+
+
+/* Buscador Vuelos */
+
+.buscar {
+	width: 327px;
+	display: inline-block;
+	margin-left: 10px;
+	background-color: #2d2d2d;
+	padding: 30px;
+}
+
+.buscador-vuelos {
+	font-family: 'Muli', sans-serif;
+}
+
+.buscar h2 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.origen-destino label {
+	display: none;
+}
+
+.origen-destino input {
+	width: 100%
+}
+
+.flex-fechas label {
+	font-size: 12px;
+}
+
+.flex-fechas label[for=solo-ida] {
+	margin-right: 20px;
+}
+
+.fechas input{
+	box-sizing: content-box;
+}
+
+.fechas label {
+	display: none;
+}
+
+.buscar input {
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+form.buscador-vuelos select {
+	color: #fff;
+}
+
+form .salida {
+    float: left;
+    display: block;
+}
+
+form .vuelta {
+    float: right;
+    display: block;
+}
+
+form label[for=salida],
+form label[for=vuelta] {
+    padding-left: 3px;
+    display: block;
+}
+
+form input[name=salida],
+form input[name=vuelta] {
+    width: 110px;
+    background: url('../imagenes/calendario.png') 97% center no-repeat;
+    padding-left: 4px;
+}
+
+form input[name=vuelta]:disabled {
+    border-bottom: 1px solid gray;
+    background: url('../imagenes/calendario_disabled.png') 97% center no-repeat;
+    color: gray;
+}
+
+label[for=n_adultos],
+label[for=n_niños],
+label[for=n_bebes] {
+	display: block;
+}
+
+.adultos,
+.ninos,
+.bebes {
+	display: inline-block;
+}
+
+.adultos,
+.ninos {
+	margin-right: 23px;
+}
+
+.buscar input[type=submit] {
+	border: 0;
+	background-color: #06be9f;
+	color: #2d2d2d;
+	font-family: 'Montserrat' sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	width: 100%;
+	height: 45px;
+	margin-bottom: 0;
+}
+
+
+
+/* === MEDIA QUERIES ===
+   ================== */
+
+
+
+  @media(min-width: 979px) {
+
+  	.sb-toggle-right {
+  		display: none;
+  	}
+  	#menu {
+  		margin-right: 0 !IMPORTANT;
+  		display: inline-block;
+  		float: right;
+  	}
+
+  	#menu li {
+  		height: 100%;
+  	}
+
+  	#menu a {
+  		padding: 34px;
+  		display: inline-block;
+  	}
+
+.pgwSlider {
+	max-width: 623px;
+}
+
+.pgwSlider .ps-current {
+	width: 100%;
+	display: block;
+	float: none !IMPORTANT;
+	margin-bottom: 10px;
+}
+
+ul.pgwSlider,
+.pgwSlider ul {
+ 	float: none !IMPORTANT;
+ 	width: 100%;
+}
+
+ul.pgwSlider.narrow > li,
+ .pgwSlider.narrow > .ps-list > li {
+ 	max-height: 92px;
+ }
+
+.slider .ps-list {
+    display: inline-block;
+    width: 100%;
+}
+
+ul.pgwSlider.wide > li,
+.pgwSlider.wide > ul > li {
+	display: inline-block;
+	width: 24% !IMPORTANT;
+	margin-bottom: 0;
+}
+
+
+  }
+
+
+
+
+@media(max-width: 380px) {
+	h1 {
+		width: 235px;
+		height: 50px;
+		margin-left: 10px;
+		margin-top: 20px;
+	}
+
+  }
+
+
+@media(max-width: 979px) { 
+ 	.nav-bar2-mobile {
+  		display: block !IMPORTANT;
+  	}
+
+  	.nav-bar2 {
+  		display: none;
+  	}
+
+  	.menu-navbar1 {
+  		display: block;
+  		float: none;
+  	}
+
+  	.ofertas {
+  		width: 100%;
+  	}
+
+  	.buscar {
+  		width: 100%;
+  		box-sizing: border-box;
+  		margin-left: 0px;
+  		margin-top: 20px;
+  	}
+
+  	.origen-destino input {
+  		width: 45%;
+  	}
+
+  	input[name="origen"] {
+  		margin-right: 75px;
+  	}
+ }
+
+
+  @media(max-width: 767px) {
+
+  	.login_registro_trigger {
+  		display: block !IMPORTANT;
+  		background: url('../imagenes/icon-user.png') no-repeat center;
+		background-size: cover;
+	  	width: 22px;
+		height: 30px;
+		margin-top: 14px;
+		margin-left: 14px;
+  	}
+
+  	.login_registro p {
+  		display: none;
+  	}
+  }
