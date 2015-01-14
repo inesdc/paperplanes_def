@@ -160,6 +160,7 @@ h1 {
 	float: right;
 	margin: 0px;
 	list-style: none;
+	padding: 0;
 }
 
 .menu-navbar1 a {
@@ -254,6 +255,32 @@ h1 {
 
 /* SLIDER */
 
+.pgwSlider .ps-caption {
+	background: none repeat scroll 0% 0% rgba(251, 240, 240, 0.75);
+	color: rgb(45, 45, 45);
+	text-transform: uppercase;
+	font-weight: 700;
+	text-transform: ;
+	font-family: 'Montserrat', sans-serif;
+	border-top: 2px solid #06be9f;
+}
+
+ul.pgwSlider > li span,
+.pgwSlider > .ps-list > li span {
+	background: none repeat scroll 0% 0% rgba(251, 240, 240, 0.75);
+	color: rgb(45, 45, 45);
+	text-transform: uppercase;
+	font-weight: 700;
+	text-transform: ;
+	font-family: 'Montserrat', sans-serif;
+	border-bottom: 2px solid #06be9f;
+
+}
+
+.pgwSlider.narrow .ps-current {
+	margin-bottom: 20px;
+}
+
 .ofertas {
 	display: inline-block;
 	float: left;
@@ -290,7 +317,7 @@ h1 {
 	display: inline-block;
 	margin-left: 10px;
 	background-color: #2d2d2d;
-	padding: 30px;
+	padding: 22px;
 }
 
 .buscador-vuelos {
@@ -316,6 +343,10 @@ h1 {
 
 .flex-fechas label[for=solo-ida] {
 	margin-right: 20px;
+}
+
+.fechas {
+	margin-top: 10px;
 }
 
 .fechas input{
@@ -450,7 +481,7 @@ ul.pgwSlider.narrow > li,
 ul.pgwSlider.wide > li,
 .pgwSlider.wide > ul > li {
 	display: inline-block;
-	width: 24% !IMPORTANT;
+	width: 24.4% !IMPORTANT;
 	margin-bottom: 0;
 }
 
@@ -495,14 +526,51 @@ ul.pgwSlider.wide > li,
   		margin-left: 0px;
   		margin-top: 20px;
   	}
+}
 
-  	.origen-destino input {
+@media(min-width: 675px) and (max-width: 979px) { 
+  	.origen-destino .origen,
+  	.origen-destino .destino {
   		width: 45%;
   	}
 
-  	input[name="origen"] {
-  		margin-right: 75px;
+  	.origen-destino .origen {
+  		float: left;
   	}
+
+  	.origen-destino .destino {
+  		float: right;
+  	}
+
+
+  	.flex-fechas {
+  		float: left;
+  	}
+
+  	.fechas {
+  		margin-top: 0;
+  		float: right;
+  	}
+
+	form label[for="salida"],
+	form label[for="vuelta"] {
+		display: inline-block;
+	}
+
+	.fechas div.vuelta {
+		margin-left: 20px;
+	}
+
+	.n_pasajeros {
+		margin-top: 30px;
+		float: left;
+	}
+
+	.buscar input[type="submit"] {
+		width: 200px;
+		float: right;
+		margin-top: 30px;
+	}
  }
 
 

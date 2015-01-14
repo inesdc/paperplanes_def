@@ -148,10 +148,14 @@
 					<h2>Busca tu vuelo</h2>
 					<form class="buscador-vuelos" form action="" method="post" enctype="multipart/form-data">
 						<fieldset class="origen-destino">
-							<label for="origen">Orígen</label>
-							<input type="textarea" name="origen" placeholder="Origen">
-							<label for="destino">Destino</label>
-							<input type="textarea" name="destino" placeholder="Destino">
+							<div class="origen">
+								<label for="origen">Orígen</label>
+								<input type="textarea" name="origen" placeholder="Origen">
+							</div>
+							<div class="destino">
+								<label for="destino">Destino</label>
+								<input type="textarea" name="destino" placeholder="Destino">
+							</div>
 						</fieldset>
 						<br>
 						<fieldset class="flex-fechas">
@@ -160,7 +164,6 @@
 				            <input type="checkbox" id="flexibilidad" name="flexibilidad de fechas" value="flexibilidad">
 				            <label for="flexibilidad"><span>Flexibilidad de fechas</span></label>
 						</fieldset>
-						<br>
 						<fieldset class="fechas">
 							<div class="salida">
 				                <label for="salida">Salida</label>
@@ -172,7 +175,7 @@
 				            </div>
 						</fieldset>
 						<br>
-						<fieldset>
+						<fieldset class="n_pasajeros">
 							<div class="adultos">
 								<label for="n_adultos">Adultos</label>
 								<select name="n_adultos">
