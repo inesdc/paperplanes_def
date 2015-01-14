@@ -259,6 +259,27 @@ h1 {
 	float: left;
 }
 
+.pgwSlider .ps-prevIcon {
+	border: 0;
+	background: url('../imagenes/icon_prev.png') no-repeat center;
+	width: 55px;
+	height: 47px;
+}
+
+.pgwSlider .ps-nextIcon {
+	border: 0;
+	background: url('../imagenes/icon_next.png') no-repeat center;
+	width: 55px;
+	height: 47px;
+}
+
+.pgwSlider .ps-current .ps-prev,
+.pgwSlider .ps-current .ps-next {
+	background: transparent;
+	border: 0;
+	top: 45% !IMPORTANT;
+}
+
 
 
 
