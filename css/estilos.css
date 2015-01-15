@@ -1,5 +1,6 @@
 /* ===== GENERAL =====
    ================== */
+
 *:focus {
     outline: 0;
 }
@@ -71,6 +72,21 @@ form select {
  #sb-site {
  	margin: 0 auto;
  	background-color: transparent;
+ }
+
+ .hidden {
+ 	display: none;
+ }
+
+
+ .button-default {
+	border: 0;
+	background-color: #06be9f;
+	color: #fff;
+	font-family: 'Montserrat' sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	height: 45px;
  }
 
 /* ===== NAVIGATION=====
@@ -317,7 +333,7 @@ ul.pgwSlider > li span,
 	display: inline-block;
 	margin-left: 10px;
 	background-color: #2d2d2d;
-	padding: 29px;
+	padding: 32px;
 }
 
 .buscador-vuelos {
@@ -409,18 +425,11 @@ label[for=n_bebes] {
 
 .adultos,
 .ninos {
-	margin-right: 24px;
+	margin-right: 21px;
 }
 
 .buscar input[type=submit] {
-	border: 0;
-	background-color: #06be9f;
-	color: #2d2d2d;
-	font-family: 'Montserrat' sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
 	width: 100%;
-	height: 45px;
 	margin-bottom: 0;
 }
 
@@ -429,41 +438,109 @@ label[for=n_bebes] {
    ================== */
 
    .banner {
-   	background: url('../imagenes/hotel.png') no-repeat center;
-   	background-size: cover;
-   	width: 100%;
+	   	background: url('../imagenes/hotel.png') no-repeat center;
+	   	background-size: cover;
+	   	width: 100%;
+	   	float: left;
+	   	margin-bottom: 20px;
+	   	margin-top: 30px;
+	   	max-height: 138px;
+	   	overflow: hidden;
+	   	transition: max-height 0.5s;
    }
 
+   .banner:hover {
+   		max-height: 250px;
 
+   }
+
+   .banner .oferta p {
+	   	text-align: right;
+		display: block;
+	   	color: #06be9f;
+	   	margin: 20px;
+   }
+
+   .banner .oferta p span {
+	   	font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 32px;
+		color: #fff;
+	}
+
+   .banner .oferta span {
+   		color: #06be9f;
+   }
+
+   .banner .oferta h2 {
+   		padding: 15px;
+   		background-color: rgba(0,0,0,0.65);
+   		margin: 0px;
+   }
+
+   .cta-oferta {
+   		display: block;
+   		background-color: rgba(0,0,0,0.65);
+   }
+
+   .cta-oferta p {
+   		padding: 12px;
+		height: 45px;
+		color: #fff;
+		margin: 0;
+		padding-left: 15px;
+		vertical-align: middle;
+		display: inline-block;
+   }
+
+   .cta-oferta .button-default {
+   	float: left;
+   }
 
 /* ===== FOOTER =====
    ================== */
 
    footer {
-   	background-color: #2d2d2d;
-   	color: #fff;
+	   	background-color: #2d2d2d;
+	   	color: #fff;
+	   	font-size: 14px;
+	   	clear: both;
    }
 
    footer ul {
-   	list-style: none;
-   	padding: 10px;
+	   	list-style: none;
+	   	padding: 10px;
+	   	margin-bottom: 0;
    }
 
    footer ul li {
-   	padding: 10px;
-   	vertical-align: top;
-	width: 16%;
-	display: inline-block;
+	   	padding: 10px;
+	   	vertical-align: top;
+		width: 16%;
+		display: inline-block;
    }
 
+   footer h3 {
+   		text-transform: uppercase;
+   }
    
-
    .ico-twitter{
-	background: url('../imagenes/twitter.png') no-repeat left;
-	width: 49px;
-	height: 40px;
-	vertical-align: bottom;
-}
+	   	display: inline-block;
+		background: url('../imagenes/twitter.png') no-repeat left;
+		width: 49px;
+		height: 40px;
+		vertical-align: bottom;
+		float: right;
+	}
+
+	.ico-rss{
+	   	display: inline-block;
+		background: url('../imagenes/rss.png') no-repeat left;
+		width: 49px;
+		height: 40px;
+		vertical-align: bottom;
+		float: right;
+	}
 
 
 /* === MEDIA QUERIES ===

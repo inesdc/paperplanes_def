@@ -32,6 +32,7 @@ $(document).ready(function() {
 });
 
 
+
 $(document).ready(function () {
     $(document).on('click', 'input[type=text]', function () {
         this.select();
