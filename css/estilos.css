@@ -80,7 +80,7 @@ form select {
 
 .top-bar {
 	background-color: #2d2d2d;
-	color: #fff;
+	color: #06C9A8;
 	height: 60px;
 	width: 100%
 }
@@ -317,7 +317,7 @@ ul.pgwSlider > li span,
 	display: inline-block;
 	margin-left: 10px;
 	background-color: #2d2d2d;
-	padding: 22px;
+	padding: 29px;
 }
 
 .buscador-vuelos {
@@ -409,7 +409,7 @@ label[for=n_bebes] {
 
 .adultos,
 .ninos {
-	margin-right: 23px;
+	margin-right: 24px;
 }
 
 .buscar input[type=submit] {
@@ -424,6 +424,46 @@ label[for=n_bebes] {
 	margin-bottom: 0;
 }
 
+
+/* ===== BANNER =====
+   ================== */
+
+   .banner {
+   	background: url('../imagenes/hotel.png') no-repeat center;
+   	background-size: cover;
+   	width: 100%;
+   }
+
+
+
+/* ===== FOOTER =====
+   ================== */
+
+   footer {
+   	background-color: #2d2d2d;
+   	color: #fff;
+   }
+
+   footer ul {
+   	list-style: none;
+   	padding: 10px;
+   }
+
+   footer ul li {
+   	padding: 10px;
+   	vertical-align: top;
+	width: 16%;
+	display: inline-block;
+   }
+
+   
+
+   .ico-twitter{
+	background: url('../imagenes/twitter.png') no-repeat left;
+	width: 49px;
+	height: 40px;
+	vertical-align: bottom;
+}
 
 
 /* === MEDIA QUERIES ===
