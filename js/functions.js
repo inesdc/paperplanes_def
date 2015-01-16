@@ -89,7 +89,6 @@ $(document).ready(function() {
     });
 });
 
-
 // Traducción al español de Datepicker
 $(function($){
     $.datepicker.regional['es'] = {
