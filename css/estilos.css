@@ -72,6 +72,7 @@ form select {
  #sb-site {
  	margin: 0 auto;
  	background-color: transparent;
+ 	min-height:100%!important;
  }
 
  .hidden {
@@ -241,6 +242,8 @@ h1 {
 	margin: 0 auto;
 }
 
+.nav-bar2-mobile
+
 .ico-rtv {
 	background: url('../imagenes/icon-rtv.png') no-repeat left;
 	width: 49px;
@@ -320,7 +323,7 @@ ul.pgwSlider > li span,
 .pgwSlider .ps-current .ps-next {
 	background: transparent;
 	border: 0;
-	top: 45% !IMPORTANT;
+	top: 40% !IMPORTANT;
 }
 
 
@@ -568,39 +571,39 @@ label[for=n_bebes] {
   		display: inline-block;
   	}
 
-.pgwSlider {
-	max-width: 623px;
-}
+	.pgwSlider {
+		max-width: 623px;
+	}
 
-.pgwSlider .ps-current {
-	width: 100%;
-	display: block;
-	float: none !IMPORTANT;
-	margin-bottom: 10px;
-}
+	.pgwSlider .ps-current {
+		width: 100%;
+		display: block;
+		float: none !IMPORTANT;
+		margin-bottom: 10px;
+	}
 
-ul.pgwSlider,
-.pgwSlider ul {
- 	float: none !IMPORTANT;
- 	width: 100%;
-}
+	ul.pgwSlider,
+	.pgwSlider ul {
+	 	float: none !IMPORTANT;
+	 	width: 100%;
+	}
 
-ul.pgwSlider.narrow > li,
- .pgwSlider.narrow > .ps-list > li {
- 	max-height: 92px;
- }
+	ul.pgwSlider.narrow > li,
+	 .pgwSlider.narrow > .ps-list > li {
+	 	max-height: 92px;
+	 }
 
-.slider .ps-list {
-    display: inline-block;
-    width: 100%;
-}
+	.slider .ps-list {
+	    display: inline-block;
+	    width: 100%;
+	}
 
-ul.pgwSlider.wide > li,
-.pgwSlider.wide > ul > li {
-	display: inline-block;
-	width: 24.4% !IMPORTANT;
-	margin-bottom: 0;
-}
+	ul.pgwSlider.wide > li,
+	.pgwSlider.wide > ul > li {
+		display: inline-block;
+		width: 24.4% !IMPORTANT;
+		margin-bottom: 0;
+	}
 
 
   }
@@ -618,10 +621,34 @@ ul.pgwSlider.wide > li,
 
   }
 
+@media(max-width: 455px) {
+	.banner {
+		max-height: 167px;
+	}
+}
+
+@media(max-width: 629px) {	
+	.banner .button-default {
+		display: block;
+		margin: 0 auto;
+		float: none;
+	}
+	.banner .cta-oferta p {
+		text-align: center;
+		display: block;
+	}
+}
+
 
 @media(max-width: 979px) { 
  	.nav-bar2-mobile {
   		display: block !IMPORTANT;
+  		margin-top: 0;
+  		list-style: none;
+  	}
+
+  	.nav-bar2-mobile li {
+  		margin-bottom: 20px;
   	}
 
   	.nav-bar2 {
@@ -706,4 +733,28 @@ ul.pgwSlider.wide > li,
   	.login_registro p {
   		display: none;
   	}
+
+  	footer ul {
+  		padding: 0;
+  	}
+
+  	footer ul li {
+  		width: 100%;
+  		display: block;
+  		text-align: center;
+  	}
+
+  	footer ul li p {
+  		display: none;
+  	}
+ 	
+ 	footer ul li  {
+ 		border-top: 1px solid #4C4A4A;
+ 	}
+
+ 	.ico-twitter,
+ 	.ico-rss {
+ 		float: none;
+ 	}
+
   }

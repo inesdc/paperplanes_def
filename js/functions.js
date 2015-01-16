@@ -1,3 +1,5 @@
+//SIDEBAR
+
 $(document).ready(function(){
   
   	if ( $(window).width() > 979 ) {
@@ -16,6 +18,8 @@ $(document).ready(function(){
   
 });
 
+//SLIDDER
+
 $(document).ready(function() {
 
 	if($(window).width() > 480){
@@ -31,7 +35,7 @@ $(document).ready(function() {
 
 });
 
-
+//DATE PICKER
 
 $(document).ready(function () {
     $(document).on('click', 'input[type=text]', function () {
@@ -107,3 +111,14 @@ $(function($){
     };
     $.datepicker.setDefaults($.datepicker.regional['es']);
 });
+
+//FOOTER MOBILE
+
+$(document).ready(function(){
+
+    if ($(window).width() < 769) {
+        $('footer li').click(function(){
+            $(this).children('p').slideToggle();
+        });
+    }
+})
