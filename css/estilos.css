@@ -435,6 +435,11 @@ label[for=n_bebes] {
 	margin-bottom: 0;
 }
 
+.ui-widget-header {
+	border: 1px solid #0BC1A2;
+	background-color: #0BC1A2;
+}
+
 
 /* ===== BANNER =====
    ================== */
