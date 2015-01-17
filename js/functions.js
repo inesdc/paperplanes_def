@@ -114,10 +114,19 @@ $(function($){
 //FOOTER MOBILE
 
 $(document).ready(function(){
+    console.log();
 
     if ($(window).width() < 769) {
         $('footer li').click(function(){
             $(this).children('p').slideToggle();
         });
     }
-})
+
+    $(window).resize(function(){
+        if ($(window).width() < 769) {
+            $('footer li').click(function(){
+                $(this).children('p').slideToggle();
+            });
+        }
+    });
+});
